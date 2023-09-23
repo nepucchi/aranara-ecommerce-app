@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradientbg1"
+    tools:context=".HomeFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextAppearance="?attr/textAppearanceTitleSmall"
+        app:menu="@menu/top_app_bar"
+        app:title="Aranara" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topAppBar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/locationbutton"
+                android:id="@+id/findbutton"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/findbutton"
+                android:text="Get back to browsing!"
+                android:id="@+id/getback"
+                android:textStyle="bold"
+                android:fontFamily="@font/nunitomedium"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:textSize="20dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/getback"
+                android:id="@+id/carousel1"
+                tools:listitem="@layout/carousel_layout"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:itemCount="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/onsale"
+                android:text="On sale right now!"
+                android:layout_below="@id/carousel1"
+                android:fontFamily="@font/nunitomedium"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/onsale"
+                android:id="@+id/sale"
+                android:text="Up to 50% off!"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/nunitomedium"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/sale"
+                android:id="@+id/carousel2"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:itemCount="3"
+                tools:listitem="@layout/carousel_layout"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

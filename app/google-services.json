@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "408680153705",
+    "project_id": "uas-ecommerce-11fe2",
+    "storage_bucket": "uas-ecommerce-11fe2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408680153705:android:8dd654a5d1ed57dc0cd8f8",
+        "android_client_info": {
+          "package_name": "com.example.uas_ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408680153705-41aflo4tnle7r7giiueegv572gs9s369.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ5-ZBAEW0njAnHDzTuKTrtC-WpdQd6wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408680153705-41aflo4tnle7r7giiueegv572gs9s369.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
